@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function gcd(a, b) {
+        return b === 0 ? a : gcd(b, a % b);
+      }
+      let length = +prompt("nhap chieu dai");
+      let width = +prompt("nhap chieu rong");
+      let square_size = gcd(length, width);
+      let number_square = (length * width) / (square_size * square_size);
+      console.log(`so hinh vuong toi thieu la ${number_square}`);
+      console.log(`kich co cua moi hinh vuong la ${square_size}`);
+    </script>
+  </body>
+</html>

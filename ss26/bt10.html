@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bt10</title>
+  </head>
+  <body>
+    <script>
+      let arr1 = new Array();
+      let arr2 = new Array();
+      let arr3 = new Array();
+      let n = +prompt("Nhap so phan tu cua mang thu 1");
+
+      for (let i = 0; i < n; i++) {
+        let z = +prompt("Nhap gia tri cua phan tu thu", i + 1);
+        arr1[z] = 1;
+      }
+      m = +prompt("Nhap so phan tu cua mang thu 2");
+      for (let i = 0; i < m; i++) {
+        let z = +prompt("Nhap gia tri cua phan tu thu ", i + 1);
+        arr2[z] = 1;
+      }
+      x = +prompt("Nhap so phan tu cua mang thu 3");
+      for (let i = 0; i < x; i++) {
+        let z = +prompt("Nhap gia tri cua phan tu thu ", i + 1);
+        arr3[z] = 1;
+      }
+      console.log("Cac phan tu trung nhau trong 3 mang la");
+      for (let i = 0; i < 10000000; i++) {
+        if (arr1[i] > 0 && arr2[i] > 0 && arr3[i] > 0) {
+          console.log(i);
+        }
+      }
+    </script>
+  </body>
+</html>
